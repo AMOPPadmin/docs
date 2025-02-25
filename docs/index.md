@@ -1,7 +1,7 @@
 # Amopp Docs
 
 This documentation is maintained by the AMOPP Computing Group for the purpose of sharing information about our services, including user guides,
-service updates, account request and renewal support.
+service updates and account request.
 
 ## Documentation
 
@@ -9,13 +9,15 @@ General User Information:
 
 - [Getting an Account](account-services.md)
 - [Guide for New Users](new-users.md)
+- [Available Software](Cluster/Theory/software-list.md)
 - [Planned Outages](planned-outages.md)
 
 Clusters:
 
 - [Theory](Clusters/Theory.md)
+- [BIOP] (Clusters/Biop.md)
 
-# Email Support
+# Support
 
 For support for any of our services or to report a problem with any of our computing platforms, contact us at: [physics-amopp-it@ucl.ac.uk](mailto:physics-amopp-it@ucl.ac.uk)
 
