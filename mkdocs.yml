@@ -1,0 +1,26 @@
+site_name: AMOPP Computing Documentation
+site_url: https://amopp.local
+site_author: UCL AMOPP Team
+site_description: Documentation for the AMOPP Computing services at UCL.
+
+# Copyright
+copyright: 'Copyright &copy; 2025 UCL AMOPP Computing Group'
+
+theme:
+  name: material
+  palette:
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: green
+      accent: deep purple
+
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: blue
+      accent: deep orange
