@@ -24,3 +24,8 @@ theme:
         name: Light mode
       primary: blue
       accent: deep orange
+
+  markdown_extensions:
+    - admonition
+    - pymdownx.details
+    - pymdownx.superfences

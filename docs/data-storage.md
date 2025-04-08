@@ -7,13 +7,11 @@ layout: docs
 
 # Data Storage
 
-Our clusters have local [parallel filesystems](Parallel_Filesystems.md) consisting of 
-your home and Scratch directories where you can write data. These are "close to" the 
-compute, connected to it with a fast network.
-
-They may also have local storage on the compute node that can be used during your job.
+Our clusters have storage considering of your home directory, [silos](silos.md) and [scratch](scratch.md) directories where you can write data. These are "close to" the compute nodes and other types connected to it with a fast network.
 
 ## On-cluster storage
+
+Each node will have your home directory follow you. Each node will also have its own local storage you can use for your work [Scratch)](scratch.md).
 
 ### Home
 
@@ -32,7 +30,7 @@ Every user also has access to the Scratch directory `/scratch`. It is intended t
 Important data should be regularly backed up to another location. See: [Void Storage)](Void.md) for short term storage and [Silos)](Silos.md) for long term storage.
 
 - Location: `/scratch/<username>`
-- Also at: `/home/<username>/scratch` (a shortcut or symbolic link to the first location).
+<!-- - Also at: `/home/<username>/scratch` (a shortcut or symbolic link to the first location). -->
 
 ### Temporary storage for jobs (TMPDIR)
 
@@ -48,15 +46,15 @@ job fails or runs out of time, you will not be able to recover this data.
 - Location: `$TMPDIR`
 - Will only exist during your job and be deleted after.
 
+<!--
+## Cluster File System (CFS)
 
-## ARC Cluster File System (ACFS)
-
-The ARC Cluster File System (ACFS) is ARC's centralised storage system that will be available from
+The ARC Cluster File System (CFS) is ARC's centralised storage system that will be available from
 multiple ARC systems.
 
 It is the backed-up location for data which you wish to keep.
 
-The ACFS is available read-write on the login nodes but read-only on the compute nodes. This means
+The CFS is available read-write on the login nodes but read-only on the compute nodes. This means
 that your jobs can read from it, but not write to it, and it is intended that you copy data onto
 it after deciding which outputs from your jobs are important to keep.
 
@@ -64,5 +62,6 @@ Initially rolled out on Kathleen, you will later be able to access it from Myria
 the same files from both clusters.
 
 - Location: `/acfs/users/<username>`
-- Also at: `/home/<username>/ACFS` (a shortcut or symbolic link to the first location).
+- Also at: `/home/<username>/CFS` (a shortcut or symbolic link to the first location).
 - Backed up daily.
+-->

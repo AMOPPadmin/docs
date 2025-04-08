@@ -1,3 +1,10 @@
+---
+title: Modules
+categories:
+ -
+layout: docs
+---
+
 We maintain a large software stack that is available across all our clusters (licenses permitting).
 
 We use environment modules to let you manage which specific versions of software packages you are using. 
