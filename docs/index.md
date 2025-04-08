@@ -14,8 +14,8 @@ General User Information:
 
 Clusters:
 
-- [Theory](Clusters/Theory.md)
-- [BIOP] (Clusters/Biop.md)
+- [Theory](Clusters/Theory/index.md)
+- [BIOP] (Clusters/Biop/index.md)
 
 # Support
 
